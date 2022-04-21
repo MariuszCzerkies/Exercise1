@@ -13,6 +13,10 @@ public class StudentService {
 
     private final StudentRepository studentRepository;
 
+    public List<Student> getAllStudent() {
+        return studentRepository.findAll();
+    }
+
     public List<Student> getStudent() {
         return studentRepository.findAll();
     }
